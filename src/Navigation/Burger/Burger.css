@@ -3,13 +3,13 @@
     cursor: pointer;
     background: transparent;
     padding: 10px;
-    display: inline-block;
+    display: none;
     outline: none;
     margin: 0;
-    border: 1px solid white;
-    border-radius: 8px;
     transition: 0.2s .3s ease-in-out;
     margin: 10px;
+    position: fixed;
+    z-index: 100;
 }
 
 .burger__container{
@@ -47,7 +47,7 @@
    top: 10px;
 }
 .burger--active{
-    transform: translateX(250px);
+    transform: translateX(275px);
 
 }
 .burger--active .burger__icon{
@@ -60,4 +60,10 @@
 
 .burger--active .burger__icon:after{
     transform:  translateY(-10px) rotate(-45deg);
+}
+
+@media(max-width: 600px){
+    .burger{
+        display: inline-block;
+    }
 }

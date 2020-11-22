@@ -1,13 +1,13 @@
 .SideMenu__container{
-    background-color: white;
+    background-color: #ecececf6;
     width: 250px;
-    height: 600px;
     position: absolute;
     top: 0;
     left: 0;
     transform: translateX(-250px);
     transition: 0.2s .3s ease-in-out;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    z-index: 100;
 }
 .SideMenu__container--active{
     transform: translateX(0px);
@@ -15,6 +15,8 @@
 .SideMenu__container__list{
     list-style-type: none;
     padding: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .SideMenu__container__listItem{
     padding: 20px;
@@ -26,7 +28,7 @@
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
     color: black;
 }
 .SideMenu__container__listItem>a:visited{

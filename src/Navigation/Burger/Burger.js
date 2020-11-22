@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import "./Burger.css"
 
 const Burger = ({isActive, setIsActive}) => {
