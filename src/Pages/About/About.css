@@ -1,0 +1,58 @@
+.about{
+    display: flex;
+    margin: 40px;
+}
+.about__photo {
+margin: 10px;
+width: 40vh;
+height: 40vh;
+}
+.about__text{
+margin: 10px;
+color: white;
+}
+
+.about__text>h2{
+    font-size: 2rem;
+    margin: 0;
+    font-family: Oswald;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about__text>p{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+@media (max-width: 1200px){
+    .about{
+        margin: 25px auto;
+    }
+    .about__photo {
+        margin: 0 auto;
+        width: 30vh;
+        height: 30vh;
+        }
+    .about{
+        flex-direction: column;
+    }
+    .about__text{
+        width: 30vh;
+        margin: 10px auto ;
+    }
+    .about__text>h2{
+        font-size: 2rem;
+        
+    }
+    .about__text>p{
+        font-size: 1rem;
+    }
+
+}
+@media (max-width: 320px){
+    .about__text{
+        width: 90%;
+    }
+
+}

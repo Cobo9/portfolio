@@ -1,17 +1,22 @@
 import React from 'react';
-import Card from "../../Components/Card"
 import Photo from "../../assets/images/Photo.jpg"
+import Card from "../../Components/Card"
+import "./About.css"
 const About = () => {
-    const details = {
-        image: Photo,
-        title: "About me",
-        description: "Welcome to my page. I'm Kuba. I graduated from Adam Mickiewicz University in English in July 2019. Afterwards, my friend inspired me to try web development as a new hobby. Since then I began studying HTML, CSS, JavaScript and React by creating my own projects."
-    }
 
     return (
-        <>
-            <Card image={details.image} title ={details.title} description={details.description}/>
-        </>
+        <Card>
+            <div className="about">
+            <img src={Photo} className="about__photo"/>
+            <div className="about__text">
+                <h2>Kuba Gond</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iste consectetur assumenda tempore eos fugiat sit, quasi asperiores molestiae, est reiciendis, illum illo nam natus veritatis reprehenderit accusantium pariatur. Laborum.
+                </p>
+            </div>
+            </div>
+             
+        </Card>
       );
 }
  

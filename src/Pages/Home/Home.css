@@ -20,18 +20,19 @@
     cursor: pointer;
     font-family: 'Oswald', sans-serif;
     border: none;
-    border: transparent solid 1px;
+    border: white solid 2px;
+    color: white;
+    text-transform: uppercase;
     font-size: larger;
-    background-color: white;
-    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    letter-spacing: 4px;
     outline: none;
-    border-radius: 1rem;
     padding: 0.5rem 1rem;
-    transition: .2s ease-in-out;
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
 }
 
 .action-btn:hover{
-    background-color: transparent;
-    border: white solid 1px;
-    color: white;
+    background-color: white;
+    border: transparent solid 2px;
+    color: black;
 }
